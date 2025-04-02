@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>📚 Library Management System</h1>
+
+    <div class="container">
+        <h2>Add a Book</h2>
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="number" id="year" placeholder="Year" required>
+        <select id="bookType">
+            <option value="book">Printed Book</option>
+            <option value="ebook">E-Book</option>
+        </select>
+        <input type="number" id="fileSize" placeholder="File Size (MB)" style="display: none;">
+        <button onclick="addBook()">➕ Add Book</button>
+        
+        <h2> Books List</h2>
+        <div class="book-list" id="bookList"></div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
