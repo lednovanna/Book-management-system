@@ -41,7 +41,7 @@ function addBook() {
     let newBook;
     if (bookType === "ebook") {
         if (!fileSize) {
-            alert("⚠️ Please enter file size for the e-book!");
+            alert("Please enter file size for the e-book!");
             return;
         }
         newBook = new EBook(title, author, year, fileSize);
